@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  quality-assurance-e2e-tests:
+    container_name: qa-e2e-tests
+    build: .
+    volumes:
+      - ..:/opt/quality-assurance-e2e-tests
+    command: sleep infinity
+    ports:
+      # used for the debugging runner with VS Code
+      - "9229:9229"

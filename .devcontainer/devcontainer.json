@@ -1,0 +1,16 @@
+{
+  "name": "QA end2end tests",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "quality-assurance-e2e-tests",
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/opt/quality-assurance-e2e-tests",
+  "settings": {
+    "terminal.integrated.shell.linux": "/usr/bin/zsh"
+  },
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "ms-vsliveshare.vsliveshare-pack",
+    "eamodio.gitlens"
+  ]
+}
