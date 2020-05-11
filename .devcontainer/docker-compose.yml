@@ -10,3 +10,6 @@ services:
     ports:
       # used for the debugging runner with VS Code
       - "9229:9229"
+      # used by TestCafé
+      - "1337:1337"
+      - "1338:1338"
