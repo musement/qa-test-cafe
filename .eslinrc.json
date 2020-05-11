@@ -1,0 +1,16 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "fixture": true,
+    "test": true
+  },
+  "extends": "standard",
+  "parser": "babel-eslint",
+  "rules": {
+    "no-console": 0,
+    "no-debugger": 1
+  }
+}
