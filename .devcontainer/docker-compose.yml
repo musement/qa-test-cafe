@@ -3,6 +3,7 @@ services:
   quality-assurance-e2e-tests:
     container_name: qa-e2e-tests
     build: .
+    env_file: devcontainer.env
     volumes:
       - ..:/opt/quality-assurance-e2e-tests
     command: sleep infinity
