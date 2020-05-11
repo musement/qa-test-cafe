@@ -6,7 +6,7 @@ const run = async (fixtures, browsers, reporter, options, isHeadlessMode) => {
   let testcafe = null
   let runner = null
 
-  if (true === isHeadlessMode) {
+  if (isHeadlessMode === 'true') {
     // https://devexpress.github.io/testcafe/documentation/using-testcafe/programming-interface/createtestcafe.html
     await createTestCafe('localhost', parseInt(process.env.TEST_CAFE_PORT1), parseInt(process.env.TEST_CAFE_PORT2))
       .then(tc => {

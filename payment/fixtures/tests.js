@@ -1,19 +1,3 @@
-
-/*
-import { Selector } from 'testcafe';
-
-
-fixture `Getting Started`
-    .page `http://devexpress.github.io/testcafe/example`;
-
-test('My first test', async t => {
-    // Test code
-    await t
-        .debug()
-        .setNativeDialogHandler(() => true);
-});
-*/
-
 import { Selector } from 'testcafe';
 import PaymentPage from '../pages/payment'
 

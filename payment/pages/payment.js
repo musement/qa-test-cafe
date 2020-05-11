@@ -11,7 +11,7 @@ export default class PaymentPage {
   }
 
   async extraCustomerDataPhoneForEmergenciesIsFulFilled() {
-    await t.debug().expect(this.extra_customer_data_phone_for_emergencies.value)
+    await t.expect(this.extra_customer_data_phone_for_emergencies.value)
       .eql('3468989899')
   }
 }
