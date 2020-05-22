@@ -1,3 +1,9 @@
+#-------------------------------------------------------------------------------------------------------------
+# The current file is a modified version of Microsoft devcontainer Dockerfile
+# @see https://github.com/microsoft/vscode-dev-containers/blob/master/containers/javascript-node-10/.devcontainer/Dockerfile
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License. See https://go.microsoft.com/fwlink/?linkid=2090316 for license information.
+#-------------------------------------------------------------------------------------------------------------
 FROM node:12.0.0
 
 # Avoid warnings by switching to noninteractive

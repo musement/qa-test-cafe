@@ -120,6 +120,19 @@ For more information please refer to the official TestCafe [documentation](https
 ### Distro
 the distribution installed on the remote container is a [Debian 9](https://www.debian.org/releases/stretch/index.en.html) based.
 
+### Browser versions supported
+
+each browser installed on the container which can be run in headless mode has as specific version configurable on the .env file.
+These are the versions supported by the quality assurance team therefore it will be our duty to update them when needed.
+
+### Software packages versions
+
+each software package within this project is versioned:
+- docker-compose
+- testcafe (within package.json)
+- lint (within package.json)
+- nodejs (within Dockefile)
+
 ### Linter
 this project allows you to automatically install a [linter](https://en.wikipedia.org/wiki/Lint_(software)). We decide to choose 
 one of the best for Javascript [Eslint](https://eslint.org/docs/user-guide).
