@@ -122,7 +122,8 @@ the distribution installed on the remote container is a [Debian 9](https://www.d
 
 ### Browser versions supported
 
-each browser installed on the container which can be run in headless mode has as specific version configurable on the .env file.
+each browser installed on the container runnable in headless mode has its specific version configurable on the Dockerfile
+as a build-time [ARG](https://docs.docker.com/engine/reference/builder/#arg) variable.
 These are the versions supported by the quality assurance team therefore it will be our duty to update them when needed.
 
 ### Software packages versions

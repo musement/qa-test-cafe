@@ -25,6 +25,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 ENV PATH=${PATH}:/usr/local/share/npm-global/bin
 
+ARG FIREFOX_VERSION="76.0"
+ARG CHROME_VERSION="81.0.4044.92-1"
+
 COPY ./scripts/common-setup.sh /tmp/
 COPY ./scripts/install-browsers.sh /tmp/
 RUN chmod +x /tmp/*.sh
