@@ -35,25 +35,27 @@ If you will follow the set-up with Docker (see below) then install last [Docker]
 
 - with Visual Studio Code
 
-From the root of the project launch
+From the root of the project launch the following if you are using Linux and you installed VS code via [Snap](https://snapcraft.io/docs/installing-snap-on-ubuntu)
 ```shell
 code .
 ```
 
-It should automatically propose you to build and run the project into a container.
+For Mac/Windows user just open the VS code manually and the project to your workspace.
+
+In all cases it should automatically propose you to build and run the project into a container.
 If not just follow the steps indicated on Microsoft's [offical documentation](https://code.visualstudio.com/docs/remote/containers).
 Then open the terminal of the container and run
 ```shell
-make prepare
+make install
 ```
 
 - without Visual Studio Code
 
-From the root of the project
+From the root of the project from the host
 ```shell
 cd .devcontainer
 docker-compose up -d --build --force-recreate
-make prepare
+make install
 ```
 
 * __Note__: 
