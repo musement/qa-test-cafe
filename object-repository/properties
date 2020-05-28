@@ -1,0 +1,2 @@
+export const EXTRA_CUSTOMER_DATA_PHONE_FOR_EMERGENCIES_BUTTON="form.cl:nth-child(3) > section:nth-child(1) > div:nth-child(1) > input:nth-child(2)"
+export const PHONE_FOR_EMERGENCIES_VALUE="3468989899"

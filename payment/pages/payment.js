@@ -1,17 +1,21 @@
 import { Selector, t } from 'testcafe'
+import {
+  EXTRA_CUSTOMER_DATA_PHONE_FOR_EMERGENCIES_BUTTON,
+  PHONE_FOR_EMERGENCIES_VALUE
+} from '../../object-repository/properties'
 
 export default class PaymentPage {
   constructor () {
-    this.extra_customer_data_phone_for_emergencies = Selector('form.cl:nth-child(3) > section:nth-child(1) > div:nth-child(1) > input:nth-child(2)')
+    this.extra_customer_data_phone_for_emergencies = Selector(EXTRA_CUSTOMER_DATA_PHONE_FOR_EMERGENCIES_BUTTON)
   }
 
   async fillExtraCustomerDataPhoneForEmergencies() {
     await t.expect(this.extra_customer_data_phone_for_emergencies.exists).ok()
-    await t.typeText(this.extra_customer_data_phone_for_emergencies, '3468989899')
+    await t.typeText(this.extra_customer_data_phone_for_emergencies, PHONE_FOR_EMERGENCIES_VALUE)
   }
 
   async extraCustomerDataPhoneForEmergenciesIsFulFilled() {
     await t.expect(this.extra_customer_data_phone_for_emergencies.value)
-      .eql('3468989899')
+      .eql(PHONE_FOR_EMERGENCIES_VALUE)
   }
 }

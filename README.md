@@ -176,6 +176,10 @@ called "e2e debug {DOMAIN}" which you can run to enable the debugging of the Jav
 >
 > The goal behind page objects is to abstract any page information away from the actual tests. Ideally you should store all selectors or specific instructions that are unique for a certain page in a page object, so that you still can run your test after you’ve completely redesigned your page." by [WebDriverIO](http://webdriver.io/guide/testrunner/pageobjects.html)
 
+## Object repository pattern
+
+We aim to have end2end tests resilients to change therefore we adopted the Selenium [object repository](https://www.guru99.com/object-repository-selenium.html) pattern. Within the properties file all the locations of the DOM elements or the values used by
+the tests are defined as constants. 
 
 ## Conventions
 
