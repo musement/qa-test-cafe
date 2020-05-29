@@ -81,12 +81,12 @@ make install
 
 Then you can try to run the test suite on a specific domain with the headless way
 ```shell
-make tests-payment-headless
+make tests-search-headless
 ```
 
 Of if you want to try it on your host
 ```shell
-make tests-payment
+make tests-search
 ```
 
 #### Without Docker by using Node & NPM installed on host
@@ -98,7 +98,7 @@ npm install
 
 Then you can try to run the test suite on a specific domain
 ```shell
-node index.js --domain=payment --isBrowserStack=false
+node index.js --domain=search --isBrowserStack=false
 ```
 
 ### Debugging tests with test cafe
@@ -182,20 +182,6 @@ called "e2e debug {DOMAIN}" which you can run to enable the debugging of the Jav
 
 We aim to have end2end tests resilients to change therefore we adopted the Selenium [object repository](https://www.guru99.com/object-repository-selenium.html) pattern. Within the properties file all the locations of the DOM elements or the values used by
 the tests are defined as constants. 
-
-## Conventions
-
-### Code convention
-
-The project follows [this coding convention](https://musement.atlassian.net/wiki/spaces/TEC/pages/1145864255/Musement+coding+conventions).
-
-### Git commit message convention
-
-The project follows [this Git commit message convention](https://musement.atlassian.net/wiki/spaces/TEC/pages/932872196/Write+a+Git+commit+message).
-
-### Open a pull request
-
-Pull requests titles must follow [this convention](https://musement.atlassian.net/wiki/spaces/TEC/pages/1035108357/Open+a+pull+request).
 
 ## Useful links
 https://devexpress.github.io/testcafe/example/

@@ -9,11 +9,11 @@ help:
 install: ## Install NPM on the container (this step is only necessary the first time)
 	docker exec -it ${CONTAINER_NAME} bash -c 'npm install; npm cache clean --force'
 
-tests-payment: ## Run payment end2end tests on your host
-	docker exec -it ${CONTAINER_NAME} bash -c "${TEST_CAFE_BIN} --domain=payment --is-browser-stack=false --headless=false"
+tests-search: ## Run search end2end tests on your host
+	docker exec -it ${CONTAINER_NAME} bash -c "${TEST_CAFE_BIN} --domain=search --is-browser-stack=false --headless=false"
 	
-tests-payment-headless: ## Run payment end2end tests on the container in headless mode
-	docker exec -it ${CONTAINER_NAME} bash -c "${TEST_CAFE_BIN} --domain=payment --is-browser-stack=false --headless=true"
+tests-search-headless: ## Run search end2end tests on the container in headless mode
+	docker exec -it ${CONTAINER_NAME} bash -c "${TEST_CAFE_BIN} --domain=search --is-browser-stack=false --headless=true"
 
 lint: ## Run lint on the project (without applying the fix)
 	docker exec -it ${CONTAINER_NAME} npm run lint

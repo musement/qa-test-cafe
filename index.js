@@ -22,7 +22,7 @@ function getArgs () {
 const args = getArgs();
 
 if (Object.prototype.hasOwnProperty.call(args, 'domain') === false) {
-  throw Error('Please specify the domain area (eg. --domain=payment)')
+  throw Error('Please specify the domain area (eg. --domain=search)')
 }
 
 if (fs.existsSync(args.domain) === false) {
