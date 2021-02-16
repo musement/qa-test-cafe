@@ -7,15 +7,12 @@ fixture `musement.com`
   })
 
 test('Pay with PayPal', async (t) => {
-  await t.debug();
   await t
     .typeText(Selector('div').withAttribute('data-test','firstName').child('input'), 'Elon', { replace: true })
     .typeText(Selector('div').withAttribute('data-test','lastName').child('input'), 'Musk', { replace: true })
     .typeText(Selector('div').withAttribute('data-test','email').child('input'), 'elon@musk.com', { replace: true })
-    .debug()
     .click(Selector('section').withAttribute('data-test','PaymentComponent__PaymentMethods__paypal'));
 
-  await t.debug();
   await t
     .switchToIframe(Selector('iframe').withAttribute('name',/^__zoid__paypal_buttons/))
     .hover(Selector('div').withAttribute('data-funding-source','paypal'))
