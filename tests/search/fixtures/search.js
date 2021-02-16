@@ -1,5 +1,4 @@
-import { Selector } from 'testcafe';
-import SearchPage from '../pages/search'
+import SearchPage from '../pages/search_page'
 
 const searchPage = new SearchPage()
 

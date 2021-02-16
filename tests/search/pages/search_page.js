@@ -5,7 +5,7 @@ import {
   SUBMIT_BUTTON,
   FIRST_CITE_ELEMENT,
   FIRST_CITE_ELEMENT_EXPECTED_VALUE
-} from '../../object-repository/properties'
+} from '../../../object-repository/properties'
 
 export default class SearchPage {
   constructor () {

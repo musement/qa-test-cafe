@@ -25,7 +25,7 @@ if (Object.prototype.hasOwnProperty.call(args, 'domain') === false) {
   throw Error('Please specify the domain area (eg. --domain=search)')
 }
 
-if (fs.existsSync(args.domain) === false) {
+if (fs.existsSync(`tests/${args.domain}`) === false) {
   throw Error(`Domain ${args.domain} does not exist`)
 }
 
@@ -69,7 +69,7 @@ if (args.isBrowserStack === 'true') {
 
 /* start e2e test */
 cafe.run(
-  [`${args.domain}/fixtures/*.js`],
+  [`tests/${args.domain}/fixtures/*.js`],
   browsersList,
   process.env.TEST_CAFE_REPORTER,
   runtimeOptions,
