@@ -12,8 +12,14 @@ install: ## Install NPM on the container (this step is only necessary the first 
 tests-search: ## Run search end2end tests on your host
 	docker exec -it ${CONTAINER_NAME} bash -c "${TEST_CAFE_BIN} --domain=search --is-browser-stack=false --headless=false"
 	
-tests-search-headless: ## Run search end2end tests on the container in headless mode
-	docker exec -it ${CONTAINER_NAME} bash -c "${TEST_CAFE_BIN} --domain=search --is-browser-stack=false --headless=true"
+tests-search: ## Run search end2end tests on your host
+	docker exec -it ${CONTAINER_NAME} bash -c "${TEST_CAFE_BIN} --domain=search --is-browser-stack=false --headless=false"
+
+tests-paypal-issue: ## Run paypal-issue end2end tests on your host
+	docker exec -it ${CONTAINER_NAME} bash -c "${TEST_CAFE_BIN} --domain=paypal-issue --is-browser-stack=false --headless=false"
+
+tests-payapal-issue-headless: ## Run payapal-issue end2end tests on the container in headless mode
+	docker exec -it ${CONTAINER_NAME} bash -c "${TEST_CAFE_BIN} --domain=paypal-issue --is-browser-stack=false --headless=true"
 
 lint: ## Run lint on the project (without applying the fix)
 	docker exec -it ${CONTAINER_NAME} npm run lint
