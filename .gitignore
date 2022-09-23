@@ -1,4 +1,7 @@
+venv
 .idea
+.env
+.history
+.DS_Store
 node_modules
-.vscode
-
+.npmrc
