@@ -1,4 +1,3 @@
-import { Selector } from 'testcafe';
 import SearchPage from '../pages/search'
 
 const searchPage = new SearchPage()
