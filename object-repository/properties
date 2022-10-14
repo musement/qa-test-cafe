@@ -1,5 +1,0 @@
-export const SEARCH_INPUT_BUTTON="input[name='q']"
-export const SEARCH_CRITERIA_VALUE="musement museums"
-export const SUBMIT_BUTTON="input[name='btnK']"
-export const FIRST_CITE_ELEMENT="#rso > div:nth-child(1) > div > div.r > a > div > cite"
-export const FIRST_CITE_ELEMENT_EXPECTED_VALUE="www.musement.com"
