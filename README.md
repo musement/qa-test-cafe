@@ -1,9 +1,9 @@
 # Testcafe/ts-node interoperability issues
 
-This repository illustrates a problem that arise when intermixing ts/js files for testcafe fixtures. 
+This repository illustrates a problem that arise when intermixing ts/js files for testcafe fixtures.
 There're 2 problems essentially
 
-1. Inability to resolve ts file from js fixure
+1. Inability to resolve ts file from js fixture
 
 2. Transpilation issues with ts classes being transpiled to prototypes making them incompatible to extends js es6 classes
 
