@@ -1,0 +1,22 @@
+{
+  "name": "testcafe-typescript",
+  "version": "1.0.0",
+  "scripts": {
+    "broken:class:1": "TEST_FILE=src/tests/test-broken.js ts-node src/index.js",
+    "broken:class:2": "TS_TARGET=ESNext TEST_FILE=src/tests/test-broken.js ts-node src/index.js",
+    "fine:1": "TEST_FILE=src/tests/test-fine.ts ts-node src/index.js",
+    "fine:2": "TEST_FILE=src/tests/test-broken.js ts-node --compilerOptions '{\"target\": \"ESNext\"}' src/index.js",
+    "fine:3": "testcafe chrome src/tests/test-fine.ts",
+    "fine:without-testcafe": "ts-node src/without-testcafe/index.js",
+    "broken:module:1": "TEST_FILE=src/tests/test-broken.js node src/index.js",
+    "broken:module:2": "testcafe chrome:headless -incognito src/tests/test-broken.js"
+  },
+  "author": "Aurélien Lair",
+  "dependencies": {
+    "prettier": "2.8.8",
+    "testcafe": "2.5.1-rc.1",
+    "ts-node": "10.9.1",
+    "typescript": "5.0.4",
+    "@musement/eslint-plugin": "2.0.0"
+  }
+}
